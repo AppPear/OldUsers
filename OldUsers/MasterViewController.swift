@@ -79,7 +79,7 @@ class MasterViewController: UITableViewController, UsersDelegate {
     cell.textLabel?.isHidden = true
     cell.fullName.text = object.fullName()
     cell.emailAddress.text = object.email
-    cell.userImageView.kf.setImage(with: URL(string: object.picture.medium))
+    cell.userImageView.kf.setImage(with: URL(string: object.picture.medium), placeholder: UIImage(named: "imgPlaceholder"))
     return cell
   }
   
